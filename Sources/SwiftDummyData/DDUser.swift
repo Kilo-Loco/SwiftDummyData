@@ -4,12 +4,14 @@
 //  Created by Kilo Loco on 10/20/22.
 //
 
-import Foundation
+import SwiftUI
 
-public struct DDUser {
+public struct DDUser: Identifiable {
     public let givenName: String
     public let familyName: String
     public let age: Int
+    
+    public var id: String { fullName }
 }
 
 public extension DDUser {
@@ -37,8 +39,4 @@ public extension DDUser {
         DDUser(givenName: "Rick", familyName: "Sanchez", age: 70),
         DDUser(givenName: "Morty", familyName: "Smith", age: 14),
     ]
-}
-
-extension DDUser: Identifiable {
-    public var id: String { fullName }
 }
