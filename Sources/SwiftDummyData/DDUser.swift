@@ -38,3 +38,7 @@ public extension DDUser {
         DDUser(givenName: "Morty", familyName: "Smith", age: 14),
     ]
 }
+
+extension DDUser: Identifiable {
+    public var id: String { fullName }
+}
