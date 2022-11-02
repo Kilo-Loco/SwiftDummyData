@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct DDFood: Identifiable {
+public struct DDFood: Identifiable, Hashable {
     public let name: String
     public let emoji: String
     

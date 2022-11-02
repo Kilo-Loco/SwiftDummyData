@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-public struct DDUser: Identifiable {
+public struct DDUser: Identifiable, Hashable {
     public let givenName: String
     public let familyName: String
     public let age: Int

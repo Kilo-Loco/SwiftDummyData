@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct DDAnimal: Identifiable {
+public struct DDAnimal: Identifiable, Hashable {
     public let name: String
     public let emoji: String
     
